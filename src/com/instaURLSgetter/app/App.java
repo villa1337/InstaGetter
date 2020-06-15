@@ -17,7 +17,7 @@ public class App {
 
 
         //Testing purposes
-        args = new String[]{"https://www.instagram.com/ale_hh17/"};
+        //args = new String[]{"https://www.instagram.com/a/"};
 
         //regex to later find in html code
         String pattern = "(?<=shortcode\":\").*?(?=\")";
