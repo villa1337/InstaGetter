@@ -17,7 +17,7 @@ public class App {
 
 
         //Testing purposes
-        //args = new String[]{"https://www.instagram.com/a/"};
+        //args = new String[]{"https://www.instagram.com/nasa/"};
 
         //regex to later find in html code
         String pattern = "(?<=shortcode\":\").*?(?=\")";
@@ -44,6 +44,7 @@ public class App {
 
             //Populating list with regex matches
             if (content == null) throw new AssertionError("No content in the website!");
+            System.out.println(content);
             Matcher m = Pattern.compile(pattern)
                     .matcher(content);
             while (m.find()) {
